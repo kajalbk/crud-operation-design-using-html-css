@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>crud operation</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="crud.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+    <script src="crud.js"></script>
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <div class="filterEntries">
+                <div class="entries">
+                    Show<select name="" id="table_size">
+                        <option value="10">10</option>
+                        <option value="20">20</option>
+                        <option value="50">50</option>
+                        <option value="100">100</option>
+                    </select> Entries
+                </div>
+                <div class="filter">
+                    <label for="search">Search:</label>
+                    <input type="search" name="" id="search1" placeholder="Enter name/city/post">
+                </div>
+                <div class="addMemberBtn">
+                    <button>New Member</button>
+                </div>
+            </div>
+        </header>
+        <table>
+            <thead>
+                <tr class="heading">
+                    <th>SL NO</th>
+                    <th>Pictures</th>
+                    <th>Full Name</th>
+                    <th>Age</th>
+                    <th>City</th>
+                    <th>Position</th>
+                    <th>Salary</th>
+                    <th>Start Date</th>
+                    <th>Email Id</th>
+                    <th>Phone No</th>
+                    <th>Action</th>
+                </tr>
+            </thead>
+            <tbody class="userInfo">
+                <!-- <tr>
+
+                    <td class="empty" colspan="11">No Data Available in Table</td>
+                </tr>-->
+
+                <tr>
+                    <td>1</td>
+                    <td><img src="pexels-gotta-be-worth-it-919278.jpg" alt="employee" width="40" height="60"></td>
+                    <td>kajal sahani</td>
+                    <td>23</td>
+                    <td>mumbai</td>
+                    <td>web developer</td>
+                    <td>15000</td>
+                    <td>01-01-2024</td>
+                    <td>kajal43@gmail.com</td>
+                    <td>6585578534</td>
+                    <td>
+                        <button><i class="fa-regular fa-eye"></i></button>
+                        <button><i class="fa-solid fa-pen-to-square"></i></button>
+                        <button><i class="fa-solid fa-trash"></i></button>
+                    </td>
+
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td><img src="pexels-gotta-be-worth-it-919278.jpg" alt="employee" width="40" height="60"></td>
+                    <td>kajal sahani</td>
+                    <td>23</td>
+                    <td>mumbai</td>
+                    <td>web developer</td>
+                    <td>15000</td>
+                    <td>01-01-2024</td>
+                    <td>kajal43@gmail.com</td>
+                    <td>6585578534</td>
+                    <td>
+                        <button><i class="fa-regular fa-eye"></i></button>
+                        <button><i class="fa-solid fa-pen-to-square"></i></button>
+                        <button><i class="fa-solid fa-trash"></i></button>
+                    </td>
+
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td><img src="pexels-gotta-be-worth-it-919278.jpg" alt="employee" width="40" height="60"></td>
+                    <td>kajal sahani</td>
+                    <td>23</td>
+                    <td>mumbai</td>
+                    <td>web developer</td>
+                    <td>15000</td>
+                    <td>01-01-2024</td>
+                    <td>kajal43@gmail.com</td>
+                    <td>6585578534</td>
+                    <td>
+                        <button><i class="fa-regular fa-eye"></i></button>
+                        <button><i class="fa-solid fa-pen-to-square"></i></button>
+                        <button><i class="fa-solid fa-trash"></i></button>
+                    </td>
+
+                </tr>
+                <tr>
+                    <td>4</td>
+                    <td><img src="pexels-gotta-be-worth-it-919278.jpg" alt="employee" width="40" height="60"></td>
+                    <td>kajal sahani</td>
+                    <td>23</td>
+                    <td>mumbai</td>
+                    <td>web developer</td>
+                    <td>15000</td>
+                    <td>01-01-2024</td>
+                    <td>kajal43@gmail.com</td>
+                    <td>6585578534</td>
+                    <td>
+                        <button><i class="fa-regular fa-eye"></i></button>
+                        <button><i class="fa-solid fa-pen-to-square"></i></button>
+                        <button><i class="fa-solid fa-trash"></i></button>
+                    </td>
+
+                </tr>
+                <tr>
+                    <td>5</td>
+                    <td><img src="pexels-gotta-be-worth-it-919278.jpg" alt="employee" width="40" height="60"></td>
+                    <td>kajal sahani</td>
+                    <td>23</td>
+                    <td>mumbai</td>
+                    <td>web developer</td>
+                    <td>15000</td>
+                    <td>01-01-2024</td>
+                    <td>kajal43@gmail.com</td>
+                    <td>6585578534</td>
+                    <td>
+                        <button><i class="fa-regular fa-eye"></i></button>
+                        <button><i class="fa-solid fa-pen-to-square"></i></button>
+                        <button><i class="fa-solid fa-trash"></i></button>
+                    </td>
+
+                </tr>
+            </tbody>
+        </table>
+        <!-- <footer>
+            <span>Showing 1 to 10 of 50 entries</span>
+            <div class="pagination">
+                <button>Prev</button>
+                <button class="active">1</button>
+                <button>2</button>
+                <button>3</button>
+                <button>4</button>
+                <button>5</button>
+                <button>Next</button>
+
+            </div>
+        </footer>
+    </div>
+
+    <div class="dark_bg">
+        <div class="popup">
+            <header>
+                <h2 class="modalTitle">Fill the Form</h2>
+                <button class="closebtn">&times;</button>
+            </header>
+            <div class="body">
+                <form action="#">
+                    <div class="imgholder">
+                        <label for="uploadimg" class="upload">
+                            <input type="file" name="" id="uploadimg1" class="picture">
+                            <i class="fa-solid fa-plus"></i>
+                        </label>
+                        <img src="pexels-pixabay-268533.jpg" alt="profile" width="150" height="150" class="img">
+
+                    </div>
+                    <div class="inputFieldContainer">
+                        <div class="nameField">
+                            <div class="form_control">
+                                <label for="fName">First Name:</label>
+                                <input type="text" name="" id="fName" placeholder="Enter First Name" required>
+                            </div>
+                            <div class="form_control">
+                                <label for="lName">Last Name:</label>
+                                <input type="text" name="" id="lName" placeholder="Enter Last Name" required>
+                            </div>
+                        </div>
+                        <div class="ageCityField">
+                            <div class="form_control">
+                                <label for="age">Age:</label>
+                                <input type="number" name="" id="age" placeholder="Enter Your Age" required>
+                            </div>
+                            <div class="form_control">
+                                <label for="city">City:</label>
+                                <input type="text" name="" id="city" placeholder="Enter City Name" required>
+                            </div>
+
+
+                        </div>
+                        <div class="postSalary">
+                            <div class="form_control">
+                                <label for="position">Position:</label>
+                                <input type="text" name="" id="position" placeholder="Name of the Position" required>
+                            </div>
+                            <div class="form_control">
+                                <label for="salary">Salary:</label>
+                                <input type="number" name="" id="salary" required>
+                            </div>
+
+                        </div>
+                        <div class="form_control">
+                            <label for="sDate">Start Date:</label>
+                            <input type="date" name="" id="sDate" required>
+                        </div>
+
+                        <div class="form_control">
+                            <label for="email">Email Id:</label>
+                            <input type="email" name="" id="email" placeholder="Enter Email Id" required>
+                        </div>
+                        <div class="form_control">
+                            <label for="Phone">Phone No:</label>
+                            <input type="number" name="" id="phone" placeholder="Enter Your Phone No" required>
+                        </div>
+                </form>
+            </div>
+            <footer class="popupFooter">
+                <button form="myForm" class="submitBtn">Submit</button>
+            </footer>
+        </div>
+
+    </div>
+    <script src="crud.js"></script> -->
+
+</body>
+
+</html>
